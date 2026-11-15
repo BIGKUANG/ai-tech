@@ -1,0 +1,492 @@
+[
+  {
+    "page": 1,
+    "xref": 9,
+    "file": "figures/figure_p001_1.png",
+    "w": 948,
+    "h": 317
+  },
+  {
+    "page": 22,
+    "xref": 885,
+    "file": "figures/figure_p022_1.png",
+    "w": 1612,
+    "h": 796
+  },
+  {
+    "page": 24,
+    "xref": 896,
+    "file": "figures/figure_p024_1.png",
+    "w": 5360,
+    "h": 5435
+  },
+  {
+    "page": 24,
+    "xref": 898,
+    "file": "figures/figure_p024_2.png",
+    "w": 3620,
+    "h": 1720
+  },
+  {
+    "page": 26,
+    "xref": 915,
+    "file": "figures/figure_p026_1.png",
+    "w": 807,
+    "h": 1173
+  },
+  {
+    "page": 27,
+    "xref": 920,
+    "file": "figures/figure_p027_1.png",
+    "w": 3620,
+    "h": 1712
+  },
+  {
+    "page": 28,
+    "xref": 933,
+    "file": "figures/figure_p028_1.png",
+    "w": 1129,
+    "h": 1579
+  },
+  {
+    "page": 29,
+    "xref": 938,
+    "file": "figures/figure_p029_1.png",
+    "w": 5299,
+    "h": 2475
+  },
+  {
+    "page": 29,
+    "xref": 942,
+    "file": "figures/figure_p029_2.png",
+    "w": 1376,
+    "h": 768
+  },
+  {
+    "page": 30,
+    "xref": 952,
+    "file": "figures/figure_p030_1.png",
+    "w": 1376,
+    "h": 768
+  },
+  {
+    "page": 35,
+    "xref": 991,
+    "file": "figures/figure_p035_1.png",
+    "w": 754,
+    "h": 867
+  },
+  {
+    "page": 78,
+    "xref": 1252,
+    "file": "figures/figure_p078_1.png",
+    "w": 2028,
+    "h": 414
+  },
+  {
+    "page": 79,
+    "xref": 1258,
+    "file": "figures/figure_p079_1.png",
+    "w": 2028,
+    "h": 390
+  },
+  {
+    "page": 80,
+    "xref": 1264,
+    "file": "figures/figure_p080_1.png",
+    "w": 1228,
+    "h": 523
+  },
+  {
+    "page": 82,
+    "xref": 1275,
+    "file": "figures/figure_p082_1.png",
+    "w": 487,
+    "h": 724
+  },
+  {
+    "page": 84,
+    "xref": 1284,
+    "file": "figures/figure_p084_1.png",
+    "w": 483,
+    "h": 731
+  },
+  {
+    "page": 88,
+    "xref": 1302,
+    "file": "figures/figure_p088_1.png",
+    "w": 923,
+    "h": 453
+  },
+  {
+    "page": 89,
+    "xref": 1311,
+    "file": "figures/figure_p089_1.png",
+    "w": 1061,
+    "h": 454
+  },
+  {
+    "page": 101,
+    "xref": 1379,
+    "file": "figures/figure_p101_1.png",
+    "w": 1536,
+    "h": 1024
+  },
+  {
+    "page": 124,
+    "xref": 1498,
+    "file": "figures/figure_p124_1.png",
+    "w": 11070,
+    "h": 3687
+  },
+  {
+    "page": 140,
+    "xref": 1590,
+    "file": "figures/figure_p140_1.png",
+    "w": 9403,
+    "h": 3733
+  },
+  {
+    "page": 150,
+    "xref": 1680,
+    "file": "figures/figure_p150_1.png",
+    "w": 6789,
+    "h": 6130
+  },
+  {
+    "page": 150,
+    "xref": 1682,
+    "file": "figures/figure_p150_2.png",
+    "w": 11095,
+    "h": 6343
+  },
+  {
+    "page": 162,
+    "xref": 1762,
+    "file": "figures/figure_p162_1.png",
+    "w": 8120,
+    "h": 2664
+  },
+  {
+    "page": 171,
+    "xref": 1817,
+    "file": "figures/figure_p171_1.png",
+    "w": 816,
+    "h": 313
+  },
+  {
+    "page": 190,
+    "xref": 1944,
+    "file": "figures/figure_p190_1.png",
+    "w": 404,
+    "h": 217
+  },
+  {
+    "page": 234,
+    "xref": 2223,
+    "file": "figures/figure_p234_1.png",
+    "w": 344,
+    "h": 428
+  },
+  {
+    "page": 235,
+    "xref": 2232,
+    "file": "figures/figure_p235_1.png",
+    "w": 239,
+    "h": 356
+  },
+  {
+    "page": 239,
+    "xref": 2253,
+    "file": "figures/figure_p239_1.png",
+    "w": 313,
+    "h": 571
+  },
+  {
+    "page": 250,
+    "xref": 2300,
+    "file": "figures/figure_p250_1.png",
+    "w": 527,
+    "h": 526
+  },
+  {
+    "page": 253,
+    "xref": 2313,
+    "file": "figures/figure_p253_1.png",
+    "w": 527,
+    "h": 526
+  },
+  {
+    "page": 255,
+    "xref": 2324,
+    "file": "figures/figure_p255_1.png",
+    "w": 579,
+    "h": 540
+  },
+  {
+    "page": 259,
+    "xref": 2339,
+    "file": "figures/figure_p259_1.png",
+    "w": 560,
+    "h": 583
+  },
+  {
+    "page": 266,
+    "xref": 2365,
+    "file": "figures/figure_p266_1.png",
+    "w": 190,
+    "h": 407
+  },
+  {
+    "page": 267,
+    "xref": 2370,
+    "file": "figures/figure_p267_1.png",
+    "w": 373,
+    "h": 577
+  },
+  {
+    "page": 268,
+    "xref": 2375,
+    "file": "figures/figure_p268_1.png",
+    "w": 366,
+    "h": 570
+  },
+  {
+    "page": 273,
+    "xref": 2395,
+    "file": "figures/figure_p273_1.png",
+    "w": 448,
+    "h": 331
+  },
+  {
+    "page": 275,
+    "xref": 2404,
+    "file": "figures/figure_p275_1.png",
+    "w": 540,
+    "h": 562
+  },
+  {
+    "page": 276,
+    "xref": 2410,
+    "file": "figures/figure_p276_1.png",
+    "w": 725,
+    "h": 623
+  },
+  {
+    "page": 276,
+    "xref": 2413,
+    "file": "figures/figure_p276_2.png",
+    "w": 1050,
+    "h": 616
+  },
+  {
+    "page": 277,
+    "xref": 2419,
+    "file": "figures/figure_p277_1.png",
+    "w": 900,
+    "h": 392
+  },
+  {
+    "page": 278,
+    "xref": 2425,
+    "file": "figures/figure_p278_1.png",
+    "w": 806,
+    "h": 247
+  },
+  {
+    "page": 278,
+    "xref": 2428,
+    "file": "figures/figure_p278_2.png",
+    "w": 1137,
+    "h": 259
+  },
+  {
+    "page": 279,
+    "xref": 2434,
+    "file": "figures/figure_p279_1.png",
+    "w": 373,
+    "h": 409
+  },
+  {
+    "page": 302,
+    "xref": 2530,
+    "file": "figures/figure_p302_1.png",
+    "w": 1096,
+    "h": 184
+  },
+  {
+    "page": 302,
+    "xref": 2532,
+    "file": "figures/figure_p302_2.png",
+    "w": 1096,
+    "h": 237
+  },
+  {
+    "page": 302,
+    "xref": 2534,
+    "file": "figures/figure_p302_3.png",
+    "w": 1096,
+    "h": 291
+  },
+  {
+    "page": 319,
+    "xref": 2668,
+    "file": "figures/figure_p319_1.png",
+    "w": 1690,
+    "h": 650
+  },
+  {
+    "page": 326,
+    "xref": 2700,
+    "file": "figures/figure_p326_1.png",
+    "w": 999,
+    "h": 427
+  },
+  {
+    "page": 328,
+    "xref": 2713,
+    "file": "figures/figure_p328_1.png",
+    "w": 986,
+    "h": 423
+  },
+  {
+    "page": 337,
+    "xref": 2755,
+    "file": "figures/figure_p337_1.png",
+    "w": 1682,
+    "h": 136
+  },
+  {
+    "page": 338,
+    "xref": 2763,
+    "file": "figures/figure_p338_1.png",
+    "w": 1546,
+    "h": 698
+  },
+  {
+    "page": 339,
+    "xref": 2769,
+    "file": "figures/figure_p339_1.png",
+    "w": 1570,
+    "h": 592
+  },
+  {
+    "page": 415,
+    "xref": 3100,
+    "file": "figures/figure_p415_1.png",
+    "w": 720,
+    "h": 405
+  },
+  {
+    "page": 416,
+    "xref": 3104,
+    "file": "figures/figure_p416_1.png",
+    "w": 720,
+    "h": 405
+  },
+  {
+    "page": 419,
+    "xref": 3115,
+    "file": "figures/figure_p419_1.png",
+    "w": 1598,
+    "h": 468
+  },
+  {
+    "page": 424,
+    "xref": 3143,
+    "file": "figures/figure_p424_1.png",
+    "w": 631,
+    "h": 186
+  },
+  {
+    "page": 444,
+    "xref": 3220,
+    "file": "figures/figure_p444_1.png",
+    "w": 511,
+    "h": 741
+  },
+  {
+    "page": 445,
+    "xref": 3225,
+    "file": "figures/figure_p445_1.png",
+    "w": 1101,
+    "h": 361
+  },
+  {
+    "page": 478,
+    "xref": 3377,
+    "file": "figures/figure_p478_1.png",
+    "w": 1999,
+    "h": 562
+  },
+  {
+    "page": 484,
+    "xref": 3409,
+    "file": "figures/figure_p484_1.png",
+    "w": 475,
+    "h": 268
+  },
+  {
+    "page": 688,
+    "xref": 4644,
+    "file": "figures/figure_p688_1.png",
+    "w": 1280,
+    "h": 720
+  },
+  {
+    "page": 690,
+    "xref": 4654,
+    "file": "figures/figure_p690_1.png",
+    "w": 1119,
+    "h": 649
+  },
+  {
+    "page": 691,
+    "xref": 4659,
+    "file": "figures/figure_p691_1.png",
+    "w": 1397,
+    "h": 870
+  },
+  {
+    "page": 701,
+    "xref": 4696,
+    "file": "figures/figure_p701_1.png",
+    "w": 1488,
+    "h": 124
+  },
+  {
+    "page": 702,
+    "xref": 4701,
+    "file": "figures/figure_p702_1.png",
+    "w": 3892,
+    "h": 888
+  },
+  {
+    "page": 702,
+    "xref": 4707,
+    "file": "figures/figure_p702_2.png",
+    "w": 1011,
+    "h": 104
+  },
+  {
+    "page": 703,
+    "xref": 4712,
+    "file": "figures/figure_p703_1.png",
+    "w": 691,
+    "h": 127
+  },
+  {
+    "page": 704,
+    "xref": 4719,
+    "file": "figures/figure_p704_1.png",
+    "w": 2256,
+    "h": 1240
+  },
+  {
+    "page": 710,
+    "xref": 4775,
+    "file": "figures/figure_p710_1.png",
+    "w": 3892,
+    "h": 1128
+  }
+]
