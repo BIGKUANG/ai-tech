@@ -10,7 +10,7 @@
 
 原书图 3.1 是最重要的图。它把 SIMT 核心拆成三个**协同的调度循环**：
 
-![图 3.1 通用 GPGPU 核心的微架构](../figures/Figure3.1.png)
+![图 3.1 通用 GPGPU 核心的微架构](figures/Figure3.1.png)
 
 **图 3.1**：通用 GPGPU 核心的微架构（原书插图）
 
@@ -117,7 +117,7 @@ do {
 
 原书图 3.4 给出了完整的 SIMT 栈操作示例（控制流图、时间线与栈状态）：
 
-![图 3.4 SIMT 栈操作示例](../figures/Figure3.4.png)
+![图 3.4 SIMT 栈操作示例](figures/Figure3.4.png)
 
 **图 3.4**：SIMT 栈操作示例（原书插图）
 
@@ -185,7 +185,7 @@ C: // 临界区
 
 原书图 3.5 给出了这个自旋锁示例的代码与线程状态：
 
-![图 3.5 SIMT 死锁示例](../figures/Figure3.5.png)
+![图 3.5 SIMT 死锁示例](figures/Figure3.5.png)
 
 **图 3.5**：SIMT 死锁示例（原书插图）
 
@@ -212,7 +212,7 @@ NVIDIA 在 Volta 的 **Independent Thread Scheduling** 中采用了类似学术�
 
 原书图 3.6 给出的每 warp 字段：
 
-![图 3.6 基于无栈汇聚屏障的分支发散处理机制](../figures/Figure3.6.png)
+![图 3.6 基于无栈汇聚屏障的分支发散处理机制](figures/Figure3.6.png)
 
 **图 3.6**：基于无栈汇聚屏障的分支发散处理机制（原书插图）
 
@@ -232,11 +232,11 @@ NVIDIA 在 Volta 的 **Independent Thread Scheduling** 中采用了类似学术�
 
 原书用图 3.7 的嵌套控制流和图 3.8 的代码示例说明该机制：
 
-![图 3.7 嵌套控制流示例](../figures/Figure3.7.png)
+![图 3.7 嵌套控制流示例](figures/Figure3.7.png)
 
 **图 3.7**：嵌套控制流示例（原书插图）
 
-![图 3.8 汇聚屏障分支发散处理机制的代码示例](../figures/Figure3.8.png)
+![图 3.8 汇聚屏障分支发散处理机制的代码示例](figures/Figure3.8.png)
 
 **图 3.8**：汇聚屏障分支发散处理机制的代码示例（原书插图）
 
@@ -264,15 +264,15 @@ flowchart TB
 
 原书图 3.9、3.10、3.11 分别给出了基于栈的重汇聚、Volta 的交错执行，以及无栈机制在自旋锁上的行为：
 
-![图 3.9 基于栈的重汇聚行为示例](../figures/Figure3.9.png)
+![图 3.9 基于栈的重汇聚行为示例](figures/Figure3.9.png)
 
 **图 3.9**：基于栈的重汇聚行为示例（原书插图）
 
-![图 3.10 Volta 重汇聚行为示例](../figures/Figure3.10.png)
+![图 3.10 Volta 重汇聚行为示例](figures/Figure3.10.png)
 
 **图 3.10**：Volta 重汇聚行为示例（原书插图）
 
-![图 3.11 无栈机制在自旋锁代码上的行为示例](../figures/Figure3.11.png)
+![图 3.11 无栈机制在自旋锁代码上的行为示例](figures/Figure3.11.png)
 
 **图 3.11**：无栈机制在自旋锁代码上的行为示例（原书插图）
 
@@ -379,15 +379,15 @@ GPU 寄存器堆很大（Kepler/Maxwell/Pascal 达 256 KB），而 **SRAM 面积
 
 原书图 3.12–3.14 给出了朴素分 bank 寄存器堆的结构、布局与时序：
 
-![图 3.12 朴素的分 bank 寄存器堆微架构](../figures/Figure3.12.png)
+![图 3.12 朴素的分 bank 寄存器堆微架构](figures/Figure3.12.png)
 
 **图 3.12**：朴素的分 bank 寄存器堆微架构（原书插图）
 
-![图 3.13 朴素的分 bank 寄存器布局](../figures/Figure3.13.png)
+![图 3.13 朴素的分 bank 寄存器布局](figures/Figure3.13.png)
 
 **图 3.13**：朴素的分 bank 寄存器布局（原书插图）
 
-![图 3.14 朴素分 bank 寄存器堆的时序](../figures/Figure3.14.png)
+![图 3.14 朴素分 bank 寄存器堆的时序](figures/Figure3.14.png)
 
 **图 3.14**：朴素分 bank 寄存器堆的时序（原书插图）
 
@@ -425,7 +425,7 @@ flowchart LR
 
 原书图 3.15 给出了操作数收集器的完整微架构：
 
-![图 3.15 操作数收集器微架构](../figures/Figure3.15.png)
+![图 3.15 操作数收集器微架构](figures/Figure3.15.png)
 
 **图 3.15**：操作数收集器微架构（原书插图）
 
@@ -452,13 +452,13 @@ flowchart TB
 
 **减少 bank 冲突的布局技巧**（原书图 3.16）：把**不同 warp 的同名寄存器**放到不同 bank。例如 `warp0.r0→bank0`、`warp1.r0→bank1`。这样当多个 warp 交替推进时，冲突减少。这不能解决单条指令内部操作数的冲突，但能缓解 warp 之间的冲突。
 
-![图 3.16 混洗式分 bank 寄存器布局](../figures/Figure3.16.png)
+![图 3.16 混洗式分 bank 寄存器布局](figures/Figure3.16.png)
 
 **图 3.16**：混洗式分 bank 寄存器布局（原书插图）
 
 原书图 3.17 给出了操作数收集器的时序：
 
-![图 3.17 操作数收集器的时序](../figures/Figure3.17.png)
+![图 3.17 操作数收集器的时序](figures/Figure3.17.png)
 
 **图 3.17**：操作数收集器的时序（原书插图）
 
@@ -564,7 +564,7 @@ flowchart LR
 
 原书图 3.18 给出了分支发散处多路径执行的示例：
 
-![图 3.18 分支发散处的多路径执行](../figures/Figure3.18.png)
+![图 3.18 分支发散处的多路径执行](figures/Figure3.18.png)
 
 **图 3.18**：分支发散处的多路径执行（原书插图）
 
@@ -572,7 +572,7 @@ flowchart LR
 
 原书图 3.19 给出了这个例子的控制流图与提前汇聚点：
 
-![图 3.19 早于直接后支配节点的重汇聚点](../figures/Figure3.19.png)
+![图 3.19 早于直接后支配节点的重汇聚点](figures/Figure3.19.png)
 
 **图 3.19**：早于直接后支配节点的重汇聚点（原书插图）
 
@@ -653,7 +653,7 @@ __global__ void vsadd(int y[], int a) {
 
 **标签传播规则**（原书表 3.1）如下：
 
-![表 3.1 均匀/仿射状态传播规则](../figures/Table3-1.png)
+![表 3.1 均匀/仿射状态传播规则](figures/Table3-1.png)
 
 **表 3.1**：均匀/仿射状态传播规则（原书插图）
 
@@ -815,7 +815,7 @@ __global__ void div_branch(const float* in, float* out, int n) {
 
 ## 附：本章实测代码
 
-见 `../cuda_examples/divergence.cu`：编译并运行：
+见 `code/divergence.cu`：编译并运行：
 
 ```bash
 nvcc -O3 -arch=sm_90 --extended-lambda divergence.cu -o divergence

@@ -44,3 +44,7 @@ Thumbs.db
 *.log
 *.tmp
 *.bak
+
+# CUDA 实战示例的构建产物与运行结果
+arch/cuda_programming/code/bin/
+arch/cuda_programming/code/results/

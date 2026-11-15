@@ -171,7 +171,7 @@ flowchart LR
 
 两种典型集成方式（对应原书图 1.1）：
 
-![图 1.1 GPU 计算系统包含 CPU](../figures/Figure1.1.png)
+![图 1.1 GPU 计算系统包含 CPU](figures/Figure1.1.png)
 
 **图 1.1**：GPU 计算系统包含 CPU（原书插图）
 
@@ -211,7 +211,7 @@ sequenceDiagram
 
 原书图 1.2 给出了通用现代 GPU 的骨架：
 
-![图 1.2 一种通用的现代 GPU 体系结构](../figures/Figure1.2.png)
+![图 1.2 一种通用的现代 GPU 体系结构](figures/Figure1.2.png)
 
 **图 1.2**：一种通用的现代 GPU 体系结构（原书插图）
 
@@ -235,7 +235,7 @@ sequenceDiagram
 
 书里引用 Guz 等人 [2009] 的分析模型（原书图 1.3）。模型假设：线程间不共享数据、片外带宽无限。结论是一条很有意思的曲线：
 
-![图 1.3 多核 CPU 与 GPU 的性能权衡](../figures/Figure1.3.png)
+![图 1.3 多核 CPU 与 GPU 的性能权衡](figures/Figure1.3.png)
 
 **图 1.3**：多核 CPU 与 GPU 的性能权衡（原书插图）
 
@@ -343,7 +343,7 @@ flowchart TB
 
 ## 1.5 H20 实测：把"宏观参数"落到真实硬件
 
-本节用当前环境的 NVIDIA H20-3e 实测数据，把书中的抽象概念对应到真实参数。测试代码见 `../cuda_examples/`（可按文末说明复现）。
+本节用当前环境的 NVIDIA H20-3e 实测数据，把书中的抽象概念对应到真实参数。测试代码见 `code/`（可按文末说明复现）。
 
 ### 1.5.1 设备参数
 

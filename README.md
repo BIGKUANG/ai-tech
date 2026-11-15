@@ -9,12 +9,13 @@ GPU 体系结构、CUDA 运行时、LLM 推理框架与算子库 API 的中文�
 ```
 .
 ├── arch/                          # GPU 体系结构
-│   ├── 通用图形处理器架构（中文全译本）.md/.html
-│   ├── General-Purpose Graphics Processor Architecture (2018).pdf
-│   ├── gpu_arch_notes/            # 原书 5 章精读笔记（解读 + 前沿补充 + H20 实测）
-│   ├── H20_共享存储器Bank冲突详解.md
-│   ├── figures/                   # 书中插图
-│   └── cuda_examples/             # 微基准 CUDA 示例
+│   ├── gpu_arch_notes/            # 原书精读笔记与译文（含插图、配套代码）
+│   │   ├── 通用图形处理器架构（中文全译本）.md/.html
+│   │   ├── General-Purpose Graphics Processor Architecture (2018).pdf
+│   │   ├── H20_共享存储器Bank冲突详解.md
+│   │   ├── code/                  # 笔记配套 CUDA 微基准
+│   │   └── figures/               # 书中插图
+│   └── cuda_programming/          # CUDA 指南译本 + 编程实战 + 代码
 ├── runtime/
 │   └── cuda-runtime-guide-zh.md   # CUDA Runtime 库详解（目录/架构/模块/用法/对比）
 ├── compile/
@@ -34,10 +35,10 @@ GPU 体系结构、CUDA 运行时、LLM 推理框架与算子库 API 的中文�
 ## 内容简介
 
 ### arch — GPU 体系结构
-- **中文全译本**：Aamodt 等《General-Purpose Graphics Processor Architectures》全文翻译。
-- **gpu_arch_notes**：按章节拆解的精读笔记，含 SIMT 核心、存储系统、交叉研究等，并补充 Volta → Hopper 之后的进展。
-- **Bank 冲突专题**：以 H20 实测数据讲解 bank 冲突的成因、测量与优化。
-- **cuda_examples**：合并访问、占用率、分支发散、bank 冲突、带宽、SAXPY 等微基准。
+- **中文全译本**（`gpu_arch_notes/`）：Aamodt 等《General-Purpose Graphics Processor Architectures》全文翻译。
+- **gpu_arch_notes**：按章节拆解的精读笔记，含 SIMT 核心、存储系统、交叉研究等，并补充 Volta → Hopper 之后的进展；`code/` 为配套微基准。
+- **Bank 冲突专题**：以 H20 实测数据讲解 bank 冲突的成因、测量与优化，附完整可运行程序。
+- **cuda_programming**：CUDA Programming Guide 中文全译本，以及《CUDA 编程实战》（H20/sm_90，16 个可编译运行示例，含实测数据与指令级优化）。
 
 ### runtime — CUDA Runtime
 以实际安装的 CUDA Toolkit 为基线，讲解 `libcudart` 的安装目录组织、公开头文件模块、API 用法与代码案例，并与 Driver API、OpenCL、HIP、SYCL 做对比。
@@ -52,11 +53,11 @@ GPU 体系结构、CUDA 运行时、LLM 推理框架与算子库 API 的中文�
 
 ## 使用方式
 
-阅读文档无需额外环境。运行 `arch/cuda_examples` 下的示例需要 CUDA Toolkit：
+阅读文档无需额外环境。运行 `arch/gpu_arch_notes/code` 下的示例需要 CUDA Toolkit：
 
 ```bash
-nvcc -arch=sm_90 arch/cuda_examples/bank_conflict_demo.cu -o bank_conflict_demo
-./bank_conflict_demo
+nvcc -arch=sm_90 arch/gpu_arch_notes/code/props.cu -o props
+./props
 ```
 
 ## 许可

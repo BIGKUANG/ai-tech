@@ -28,7 +28,7 @@
 
 | 文档 | 内容 |
 |---|---|
-| [H20 共享存储器 Bank 冲突详解](../H20_共享存储器Bank冲突详解.md) | 以 H20 的 32 bank × 4B / 228KB 为实例，讲清 bank 映射、冲突度数、padding、XOR swizzle、广播，并附 11 张图和可复现的 CUDA 实测 |
+| [H20 共享存储器 Bank 冲突详解](H20_共享存储器Bank冲突详解.md) | 以 H20 的 32 bank × 4B / 228KB 为实例，讲清 bank 映射、冲突度数、padding、XOR swizzle、广播，并附 11 张图和可复现的 CUDA 实测 |
 
 ## 建议阅读顺序
 
@@ -77,10 +77,10 @@ flowchart LR
 
 ## 示例代码
 
-所有代码在 [`../cuda_examples/`](../cuda_examples/)，编译统一使用 `-arch=sm_90`：
+所有代码在 [`code/`](code/)，编译统一使用 `-arch=sm_90`：
 
 ```bash
-cd ../cuda_examples
+cd code
 
 # 设备参数
 nvcc -arch=sm_90 props.cu -o props && ./props
@@ -110,7 +110,7 @@ cuobjdump -sass saxpy.cubin
 
 ## 原书插图
 
-正文引用的原书插图位于 [`../figures/`](../figures/)，按原书编号命名（如 `Figure3.4.png`），便于与英文原书交叉对照。
+正文引用的原书插图位于 [`figures/`](figures/)，按原书编号命名（如 `Figure3.4.png`），便于与英文原书交叉对照。
 
 ## 术语对照
 
