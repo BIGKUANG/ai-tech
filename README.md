@@ -1,6 +1,6 @@
 # ai_tech
 
-GPU 体系结构、CUDA 运行时与 LLM 推理框架的中文学习资料与实测笔记。
+GPU 体系结构、CUDA 运行时、LLM 推理框架与算子库 API 的中文学习资料与实测笔记。
 
 所有文档均基于本地 **NVIDIA H20-3e（Hopper，sm_90）+ CUDA 13.0** 环境整理，代码示例可直接编译运行。
 
@@ -17,9 +17,18 @@ GPU 体系结构、CUDA 运行时与 LLM 推理框架的中文学习资料与实
 │   └── cuda_examples/             # 微基准 CUDA 示例
 ├── runtime/
 │   └── cuda-runtime-guide-zh.md   # CUDA Runtime 库详解（目录/架构/模块/用法/对比）
-└── framework/
-    ├── sglang-intro.md            # SGLang 推理框架介绍（结构/架构/模块）
-    └── sglang-intro-prompt.md     # 生成该文档的提示词
+├── compile/
+│   ├── learning_report.md         # 编译技术学习报告
+│   └── learning_report_outline.md # 学习报告提纲
+├── framework/
+│   ├── sglang-intro.md            # SGLang 推理框架介绍（结构/架构/模块）
+│   ├── sglang-intro-prompt.md     # 生成该文档的提示词
+│   ├── vllm-intro.md              # vLLM 推理框架介绍
+│   └── vllm-intro-prompt.md       # 生成该文档的提示词
+└── operator/                      # 算子库 API 参考（离线中文文档）
+    ├── flashinfer-api/            # FlashInfer 0.7.2 Python API 参考
+    ├── flash-attention-api/       # FlashAttention 2.8.4（FA2/FA3/FA4）API 参考
+    └── deepgemm-api/              # DeepGEMM 2.8.1 API 参考
 ```
 
 ## 内容简介
@@ -35,6 +44,11 @@ GPU 体系结构、CUDA 运行时与 LLM 推理框架的中文学习资料与实
 
 ### framework — LLM 推理框架
 以 SGLang 为例，梳理代码结构与分层架构（入口 → 调度 → 执行 → 显存/缓存 → 并行与运行时），并逐模块介绍 RadixAttention、PD 分离、推测解码、约束解码等机制。
+
+### operator — 算子库 API 参考
+- **flashinfer-api**：FlashInfer **0.7.2** Python 包，按注意力、量化与 GEMM、MoE、归一化/激活/RoPE/采样、线性/循环序列模型、通信与后端等模块拆分，含签名、参数说明与示例。
+- **flash-attention-api**：FlashAttention **2.8.4**，覆盖 FA2/FA3/FA4（CuTeDSL）注意力、变长与 KV Cache 专题、RoPE、归一化、融合 Linear/MLP、块稀疏注意力及训练组件。
+- **deepgemm-api**：DeepGEMM **2.8.1**，覆盖 FP8/FP4/BF16 稠密与分组 GEMM、cuBLASLt、Einsum、V3.2 indexer、HyperConnection、Mega Gate/mHC/MoE 及 Scaling Factor 格式规范。
 
 ## 使用方式
 
